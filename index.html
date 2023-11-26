@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div style="background-image: url(background1.jpg)">
+
+    <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"
+        ><h1 class="A"><u>Portfolio</u></h1></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+        </header>
+
+        <!-- Home section -->
+        <section id="home" class="container"> 
+          <div class="text-center mb-4"></div>
+          <div class="row">
+              <div class="col-md-6" id="info1">
+  
+                <p>Hello, I am</p>
+                <h1>SAURABH KAKAD</h1>
+                <h5><u>Front-End Web developer</u></h5>
+                <p>Front-End Web developer from Amravati Maharashtra</p>
+                <a href="#about" class="cta-button">Hear Me</a>
+              </div>
+              <div class="col-md-6">
+                <img src="profile.png" alt="profile">
+
+              </div>
+          </div>
+      </section>
+    </div>
+
+      <!-- About section -->
+      <div style="background-image: url(background2.jpg)">
+
+      <section id="about" class="container"> 
+        <div class="text-center mb-4"></div>
+        <div class="row">
+            <div class="col-md-6">
+              <img src="profile.png" alt="profile">
+            </div>
+
+            <div class="col-md-6" id="info2">
+              <h1>About Me</h1>
+              <h3>Front-End developer</h3><br>
+              <a href="#project" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+      </div>
+      <br>
+
+      <!-- Project section-->
+      <div style="background-image: url(background3.jpg)">
+
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="text-center mb-4"></div>
+        <div class="row">
+            <div class="col-md-6">
+        <div class="project" onclick="openProject('project1')">
+            <img src="Product landing page.jpg.png" alt="Sk fitness">
+            <h3>Product Landing Page</h3>
+        </div>
+            </div>
+            <div class="col-md-6">
+        <div class="project" onclick="openProject('project2')">
+            <img src="Amazon clone website.jpg.png" alt="Amazon clone">
+            <h3>Amazon clone website</h3>
+        </div>
+            </div>
+    </section>
+
+    <section id="project-details" class="hidden">
+        <button onclick="closeProject()">Close</button>
+        <div id="project-content"></div>
+    </div>
+    </section>
+    <br>
+      
+
+      <!-- contact section-->
+      <div style="background-image: url(background4.jpg)">
+
+      <section id="contact" class="contact">
+        <div class="contact-container" class="container">
+          <h2 class="cont">Contact Me</h2>
+          <form id="contact-Form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br />
+            <button type="button" onclick="validateForm()"><b>Submit</b></button>
+          </form>
+          <div id="successMessage"></div>
+          
+        </div>
+      </section>
+      </div>
+    
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="container">
+            <p>&copy;  Saurabh2023. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+  
+      <script src="script.js"></script>
+
+  </body>
+</html>
